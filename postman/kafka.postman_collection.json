@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "fe6f0755-373e-4536-b1ed-8b0da50cf49c",
+		"name": "kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProducerMsg",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e0bf3f0c-dfe2-4071-b710-fd16582d0150",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kafka/msg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kafka",
+						"msg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "017a0f6e-6ebb-45d5-b7b0-ef4b9ee139ee",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "test",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kafka/msg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kafka",
+						"msg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProducerInformation",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ca0a3811-d632-48ff-b29e-3dad076da006",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\" :\"Hello\",\n    \"age\": 50,\n    \"email\" : \"hello@world\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kafka/information",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kafka",
+						"information"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

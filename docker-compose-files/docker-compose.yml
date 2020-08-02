@@ -30,3 +30,8 @@ services:
     ports:
       - "8081:8081"
 
+  consumer:
+    image: consumer:latest
+    container_name: consumer
+    ports:
+      - "8082:8082"
