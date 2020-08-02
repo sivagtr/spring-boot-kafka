@@ -23,6 +23,4 @@ public class PropertiesConfig {
 	@Value("${msgValue}")
 	private String msgValue;
 
-	@Value("${jsonValue}")
-	private String jsonValue;
 }
