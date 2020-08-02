@@ -2,6 +2,9 @@
 
 This is to demonstrate two simple spring boot microservices which uses kafka to send and receive messages.
 
+## Overview
+![GitHub Logo](/Overview.png)
+
 ## Project structure:
 1. Producer
 2. Consumer
